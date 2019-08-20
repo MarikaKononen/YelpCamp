@@ -15,9 +15,13 @@
                 
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav ml-auto mt-2 mt-lg-0">
-                                <a class="nav-item nav-link" href="/">Login</a></li>
-                                <a class="nav-item nav-link" href="/">Sing Up</a></li>
-                                <a class="nav-item nav-link" href="/">Logout</a></li>
+                                <% if(!currentUser){ %>
+                                <li><a class="nav-item nav-link" href="/login">Login</a></li>
+                                <li><a class="nav-item nav-link" href="/register">Sing Up</a></li>
+                                <% } else {%>
+                                <li><a class="nav-item nav-link" href="#">Signed In As <%= currentUser.username %></a></li>   
+                                <li><a class="nav-item nav-link" href="/logout">Logout</a></li>
+                                <% } %>
                             </div>
                         </div>    
                     </div>
