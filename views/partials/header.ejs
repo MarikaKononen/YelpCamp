@@ -4,6 +4,8 @@
         <title>YelpCamp</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="/stylesheets/main.css">
+           
+    </head>
     </head>
     <body>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -25,5 +27,20 @@
                             </div>
                         </div>    
                     </div>
-                </nav>        
+                </nav>
+
+                <div class="container">
+                    <% if(error && error.length > 0 ){ %>
+                        <div class="alert alert-danger" role="alert">
+                            <h1><%= error %></h1>
+                        </div>
+                    <% } %>
+                    <% if(success && success.length > 0 ){ %>
+                        <div class="alert alert-success" role="alert">
+                            <h1><%= success %></h1>
+                        </div>
+                    <% } %>
+                </div>
+                
+                        
 
