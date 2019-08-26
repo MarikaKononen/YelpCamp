@@ -19,7 +19,17 @@ var commentRoutes = require("./routes/comments"),
     indexRoutes       = require("./routes/index");
 
 // APP CONFIG
-mongoose.connect("mongodb://localhost/yelp_camp", { useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost/yelp_camp", { useNewUrlParser: true});
+mongoose.connect("mongodb+srv://pasi:pasi@cluster0-5a5zn.mongodb.net/test?retryWrites=true&w=majority", { 
+    useNewUrlParser: true, 
+    useCreateIndex: true
+}).then(() =>{
+    console.log("Connected to DB");
+}).catch(err => {
+    console.log("ERROR:", err.message);
+});
+
+
 mongoose.set("useFindAndModify", false);
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
