@@ -1,3 +1,41 @@
+body{
+    font-family: 'Livvic', sans-serif;
+}
+#navbar{
+   background-color:  #D3B596;
+   color: #F4F6F4;
+}
+.jumbotron{
+    background-color: #3D774B;
+    color: #F4F6F4;
+}
+
+.jumbotron .btn{
+    background-color: #F2B656;
+    color: #F4F6F4;
+}
+
+#campgrounds-all-container{
+    background-color: #3D774B;
+    margin: 0;
+    padding: 10px;
+}
+
+.campgrounds-item{
+    background-color: #F4F6F4;
+    margin: 5px;
+    padding: 5px;
+    max-height: 245px;
+}
+.campgrounds-item img{
+    max-height: 158px;
+    width: 100%;
+}    
+.campgrounds-item .btn{
+    background-color: #E7404B;
+    color: #F4F6F4;
+}    
+
 .img-thumbnail img{
     width: 100%;
 }
