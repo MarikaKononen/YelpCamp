@@ -6,8 +6,6 @@ var express        = require("express"),
     flash          = require("connect-flash"),
     LocalStrategy  = require("passport-local"),
     methodOverride = require("method-override"),
-    Campground = require("./models/campground"),
-    Comment    = require("./models/comment"),
     User       = require("./models/user"),
     seedDB     = require("./seeds");
     
@@ -19,8 +17,15 @@ var commentRoutes = require("./routes/comments"),
     indexRoutes       = require("./routes/index");
 
 // APP CONFIG
-// DB for localhost
-mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true});
+// Database
+mongoose.connect(process.env.DATABASEURL, { 
+    useNewUrlParser: true, 
+    useCreateIndex: true
+}).then(() =>{
+    console.log("Connected to DB");
+}).catch(err => {
+    console.log("ERROR:", err.message);
+});
 
 mongoose.set("useFindAndModify", false);
 app.use(bodyParser.urlencoded({extended: true}));
