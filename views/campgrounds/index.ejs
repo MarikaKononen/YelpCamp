@@ -2,13 +2,15 @@
 
 <div class="container">
     <header class="jumbotron">
-        <div class="container">
-            <h1>Welcome To YelpCamp</h1>
-            <p>View our hand-picked campgrounds from all over the world.</p>
-            <p>
-                <a class="btn btn-lg" href="/campgrounds/new">Add New Campground</a>
-            </p>
-        </div>    
+        <div class="layer">
+            <div class="container">
+                <h1>Welcome To YelpCamp</h1>
+                <p>View our hand-picked campgrounds from all over the world.</p>
+                <p>
+                    <a class="btn btn-lg" href="/campgrounds/new">Add New Campground</a>
+                </p>
+            </div>   
+        </div> 
     </header>
 
     <div class="row text-center" id="campgrounds-all-container">
@@ -20,7 +22,7 @@
                         <h4><%= campground.name%></h4>
                     </div>
                     <p>
-                        <a href="/campgrounds/<%= campground._id %>" class="btn btn-outline-warning">More Info</a>
+                        <a href="/campgrounds/<%= campground._id %>" class="btn btn-sm basic-button">More Info</a>
                     </p>
                 </div>
             </div>

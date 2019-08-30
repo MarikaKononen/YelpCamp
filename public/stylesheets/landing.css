@@ -1,5 +1,6 @@
 body{
     background-color: #000;
+    font-family: 'Livvic', sans-serif;
 }
 
 #landing-header {
@@ -12,6 +13,12 @@ body{
 #landing-header h1 {
     color: #fff;
 }
+
+a.btn.basic-button{
+  background-color: #84847C;
+  color: #F4F6F4;
+}
+
 
 .slideshow { 
     position: fixed;
@@ -40,22 +47,22 @@ body{
 }
 
 .slideshow li:nth-child(1) { 
-    background-image: url(https://images.unsplash.com/photo-1532339142463-fd0a8979791a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60) 
+    background-image: url(../images/metsa.png); 
   }
   .slideshow li:nth-child(2) { 
-    background-image: url(https://images.unsplash.com/photo-1502218808493-e5fd26249efc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-image: url(../images/aurinko.jpg);
     animation-delay: 10s; 
   }
   .slideshow li:nth-child(3) { 
-    background-image: url(https://images.unsplash.com/photo-1496545672447-f699b503d270?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-image: url(../images/tie.jpg);
     animation-delay: 20s; 
   }
   .slideshow li:nth-child(4) { 
-    background-image: url(https://images.unsplash.com/photo-1473713984581-b8918cc3652e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-image: url(../images/vetta.jpg);
     animation-delay: 30s; 
   }
   .slideshow li:nth-child(5) { 
-    background-image: url(https://images.unsplash.com/photo-1426170042593-200f250dfdaf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-image: url(../images/jarvi.png);
     animation-delay: 40s; 
   }
 

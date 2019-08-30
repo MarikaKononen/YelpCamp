@@ -1,47 +1,127 @@
 body{
     font-family: 'Livvic', sans-serif;
+    background-color: rgba(212, 208, 199, 0.5);
 }
 #navbar{
-   background-color:  #D3B596;
-   color: #F4F6F4;
+    background-color: #111314;
+    color: #D4D0C7;
+}
+
+#navbar a{
+    color: #D4D0C7;
 }
 .jumbotron{
-    background-color: #3D774B;
+    background-image: url(../images/metsa.png);
+    background-size: auto 100%;
     color: #F4F6F4;
+}
+.layer {
+    background-color: rgba(212, 208, 199, 0.4);
+    padding: 2rem;
+    border-radius: .3rem;
 }
 
 .jumbotron .btn{
-    background-color: #F2B656;
+    background-color: #ACA49C;
+    color: #111314;
+}
+/* multiple page items */
+a.btn.basic-button{
+    background-color: #111314;
+    color: #F4F6F4;
+}
+a.btn.gray-button{
+    background-color: #84847C;;
     color: #F4F6F4;
 }
 
+button.btn.basic-button{
+    background-color: #111314;
+    color: #F4F6F4;
+}
+input.btn.basic-button{
+    background-color: #111314;
+    color: #F4F6F4;
+}
+
+input.btn.delete-button{
+    background-color: #802000;
+    color: #F4F6F4;
+}
+
+button.btn.delete-button{
+    background-color: #802000;
+    color: #F4F6F4;
+}
+
+.bg-light-grey{
+    background-color: #D4D0C7;
+}
+.bg-dark-grey{
+    background-color: #ACA49C;
+    border-radius: .3rem;
+}
+strong{
+    font-weight: 800;
+    color: #802000;
+}
+
+/* all camgrounds page */
 #campgrounds-all-container{
-    background-color: #3D774B;
+    background-color: #D4D0C7;
     margin: 0;
     padding: 10px;
+    border-radius: .3rem;
 }
 
 .campgrounds-item{
-    background-color: #F4F6F4;
+    background-color: #ACA49C;
     margin: 5px;
-    padding: 5px;
+    padding: 0 0 5px 0;
     max-height: 245px;
+    border-radius: .3rem;
 }
+.campgrounds-item .caption{
+    padding-top: 7px;
+}
+
 .campgrounds-item img{
     max-height: 158px;
     width: 100%;
+    border-radius: .3rem;
 }    
 .campgrounds-item .btn{
-    background-color: #E7404B;
+    background-color: #111314;
     color: #F4F6F4;
 }    
 
+/* forms */
+.campground-form-containers{
+    background-color: #D4D0C7;
+    padding: 20px 0;
+    width: 50%;
+    margin: 25px auto;
+    border-radius: .3rem;
+}
+.campground-forms{
+    background-color: #ACA49C;
+    padding: 20px;
+    margin: 25px auto;
+    width: 80%;
+    border-radius: .3rem;
+
+}
+
+/* show one campground page */
 .img-thumbnail img{
     width: 100%;
+    max-height: 500px;
+    border-radius: .3rem;
 }
 
 .img-thumbnail{
     padding: 0;
+   
 }
 
 #delete-form{
